@@ -1,4 +1,4 @@
-# 🧠 MESI-Based Cache Coherence System
+# MESI-Based Cache Coherence System
 
 This project implements a 2-core MESI (Modified, Exclusive, Shared, Invalid) cache coherence protocol in SystemVerilog along with a functional SystemVerilog testbench for simulation and coverage.
 
@@ -6,7 +6,7 @@ Each cache controller operates as a finite state machine (FSM), responding to re
 
 ---
 
-## 🧩 Interface Overview
+## Interface Overview
 
 The design communicates using a shared memory interface and supports multiple cores (parameterized):
 
@@ -22,7 +22,7 @@ The design communicates using a shared memory interface and supports multiple co
 
 ---
 
-## 🗂 Coherence State Encoding
+## Coherence State Encoding
 
 | State  | Code   | Description                                                   |
 |--------|--------|---------------------------------------------------------------|
@@ -33,7 +33,7 @@ The design communicates using a shared memory interface and supports multiple co
 
 ---
 
-## 🔁 State Transitions
+## State Transitions
 
 Some key examples:
 - `INVALID → EXCLUSIVE` when a read occurs and no one else has the data
@@ -44,7 +44,7 @@ Some key examples:
 
 ---
 
-## 🧪 SystemVerilog Testbench
+## SystemVerilog Testbench
 
 The current testbench is written in pure SystemVerilog, without UVM. It includes:
 
@@ -58,7 +58,7 @@ This setup allows simulation and analysis of cache coherence correctness across 
 
 ---
 
-## 📊 Coverage Analysis
+## Coverage Analysis
 
 Covergroups track MESI transitions:
 
@@ -66,7 +66,7 @@ Covergroups track MESI transitions:
 - Coverage is conditional: sampled only when the same address is reused with a changed state
 
 ---
-## 🔒 Protocol Assertions (SVA)
+## Protocol Assertions (SVA)
 
 Assertions embedded in the interface (`mesi_if.sv`) verify key MESI transitions:
 
@@ -80,7 +80,7 @@ This guards against protocol violations during simulation and improves confidenc
 
 ---
 
-## 📦 What's Included
+## What's Included
 
 | File                | Description                                  |
 |---------------------|----------------------------------------------|
@@ -91,11 +91,11 @@ This guards against protocol violations during simulation and improves confidenc
 
 ---
 
-## 🔧 **Running the Testbench**  
+## **Running the Testbench**  
 
 To compile and run this testbench, follow the **general simulation setup** provided in the **[UVM README](../README.md)**.  
 
-🔗 **UVM Repository Simulation Guide**: [Click here](../README.md)  
+ **UVM Repository Simulation Guide**: [Click here](../README.md)  
 
 ---
 
