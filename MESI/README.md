@@ -70,11 +70,11 @@ Covergroups track MESI transitions:
 
 Assertions embedded in the interface (`mesi_if.sv`) verify key MESI transitions:
 
-✅ Read miss from Invalid must go to E/S  
-✅ Modified state is unique per address  
-✅ Shared state must imply another sharer  
-✅ Transitions like `I→E`, `I→S`, `S→M`, `E→M`, `M→I`, etc. are enforced  
-✅ Snoop-based invalidation and sharing transitions are monitored
+- Read miss from Invalid must go to E/S  
+-  Modified state is unique per address  
+- Shared state must imply another sharer  
+- Transitions like `I→E`, `I→S`, `S→M`, `E→M`, `M→I`, etc. are enforced  
+- Snoop-based invalidation and sharing transitions are monitored
 
 This guards against protocol violations during simulation and improves confidence in design correctness.
 
