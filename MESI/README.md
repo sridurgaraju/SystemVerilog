@@ -99,7 +99,7 @@ To compile and run this testbench, follow the **general simulation setup** provi
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Interested in improving or extending this project (e.g., MOESI support or memory model)?  
 Feel free to fork and submit a pull request!
